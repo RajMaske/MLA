@@ -1,0 +1,61 @@
+<div class="home container py-5" id="home">
+  <!-- Welcome Section -->
+  <section class="text-center mb-5">
+    <h1 class="display-4 fw-bold text-primary">आयुक्तांच्या अधिकृत वेबसाइटवर आपले स्वागत आहे</h1>
+    <p class="lead text-muted">
+      समुदायाची सेवा करण्यासाठी आणि सकारात्मक परिणाम साधण्यासाठी समर्पित.
+    </p>
+  </section>
+
+  <!-- About Section -->
+  <section class="about mb-5">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <img src="assets/images/RajuBhaiya.jpg" alt="आयुक्तांचा फोटो" class="img-fluid rounded shadow-sm" />
+      </div>
+      <div class="col-md-6">
+        <h2 class="fw-bold text-primary"> आमदार राजुभैया नवघरे</h2>
+        <p class="text-muted">
+          आमचा आमदार सार्वजनिक सेवेत कटिबद्ध आहे आणि आमच्या समुदायासाठी लाभदायक बदलात्मक धोरणे लागू करण्याचा एक ट्रॅक
+          रेकॉर्ड आहे. त्यांच्या समर्पणाने आणि नेतृत्वाने आरोग्य, शिक्षण आणि पायाभूत सुविधांमध्ये अनेक उपक्रमांना जन्म
+          दिला आहे.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Recent Highlights/Events Section -->
+  <section class="highlights mb-5" id="details">
+    <h2 class="text-center fw-bold text-primary mb-4">अलीकडील ठळक वैशिष्ट्ये आणि कार्यक्रम</h2>
+    <div class="row">
+      <div class="col-md-4 mb-3" *ngFor="let event of events">
+        <div class="card h-100 shadow-sm">
+          <img src="assets/images/{{ event.image }}" class="card-img-top img-fluid"
+          style="object-fit: cover; object-position: top; width: 100%; height: 300px;" alt="{{ event.title }}" />
+     
+            <div class="card-body">
+                <h5 class="card-title">{{ event.title }}</h5>
+                <p class="card-text">{{ event.description }}</p>
+            </div>
+            <div class="card-footer text-muted">
+                {{ event.date }}
+            </div>
+        </div>
+    </div>
+ 
+    </div>
+  </section>
+  <div class="home container py-5">
+    <!-- Other sections... -->
+
+    <app-profile></app-profile> <!-- Profile Component -->
+    <app-updates-news></app-updates-news> <!-- Updates & News Component -->
+    <app-constituency-services></app-constituency-services> <!-- Constituency Services Component -->
+    <app-event-managemen></app-event-managemen> <!-- Event Management Component -->
+    <app-gallery></app-gallery> <!-- Include Gallery Component -->
+    <app-contact></app-contact> <!-- Include Contact Component -->
+
+    <!-- Other sections... -->
+  </div>
+
+</div>

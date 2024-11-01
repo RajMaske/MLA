@@ -1,0 +1,20 @@
+<div class="updates-news container py-5" id="news">
+  <!-- Section Heading -->
+  <h2 class="text-primary fw-bold mb-4 text-center">अद्यतने आणि बातम्या</h2>
+
+  <!-- News Articles List -->
+  <div class="news-list row gy-4">
+      <div class="col-md-6 col-lg-4" *ngFor="let article of newsArticles">
+          <div class="news-item card h-100 shadow-sm border-0">
+              <div class="card-body">
+                  <h5 class="news-title card-title fw-bold text-primary">{{ article.title }}</h5>
+                  <p class="news-date text-muted fst-italic">{{ article.date }}</p>
+                  <p class="news-description card-text">{{ article.description }}</p>
+              </div>
+              <div class="card-footer bg-transparent border-0 text-center">
+                  <button class="btn btn-outline-primary btn-sm">अधिक वाचा</button>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>

@@ -1,0 +1,26 @@
+.event-management {
+    background-color: #f8f9fa; /* Light background */
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .event-list {
+    margin-top: 20px;
+  }
+  
+  .event-item {
+    margin-bottom: 20px;
+  }
+  
+  .event-title {
+    font-weight: bold;
+    color: #007bff; /* Bootstrap primary color */
+  }
+  
+  .event-date,
+  .event-location {
+    font-style: italic;
+    color: #6c757d; /* Bootstrap muted color */
+  }
+  

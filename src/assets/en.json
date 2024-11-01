@@ -1,0 +1,15 @@
+{
+    "HEADER": {
+      "TITLE": "MLA Website",
+      "HOME": "Home",
+      "PROFILE": "Profile",
+      "EVENTS": "Events",
+      "CONTACT": "Contact"
+    },
+    "HOME": {
+      "WELCOME_MESSAGE": "Welcome to the MLA's Official Website",
+      "ABOUT_TITLE": "About the MLA",
+      "ABOUT_DESCRIPTION": "Our MLA is committed to public service and has a track record of implementing transformative policies."
+    }
+  }
+  

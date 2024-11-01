@@ -1,0 +1,22 @@
+<div class="event-management container py-5" id="events">
+  <!-- Section Heading -->
+  <h2 class="text-primary fw-bold mb-4 text-center">घटनांचा व्यवस्थापन</h2>
+
+  <!-- Events List -->
+  <div class="event-list row">
+      <div class="event-item col-md-6 col-lg-4 mb-4" *ngFor="let event of events">
+          <div class="card h-100 shadow-sm border-0">
+              <div class="card-body">
+                  <h5 class="event-title text-primary fw-bold">{{ event.title }}</h5>
+                  <p class="event-date text-muted">
+                      <i class="bi bi-calendar-event me-2"></i>{{ event.date }} | {{ event.time }}
+                  </p>
+                  <p class="event-description">{{ event.description }}</p>
+                  <p class="event-location text-muted">
+                      <i class="bi bi-geo-alt-fill text-primary me-2"></i>स्थान: {{ event.location }}
+                  </p>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>

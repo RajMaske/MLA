@@ -1,0 +1,40 @@
+<div class="contact container py-5" id="contact">
+    <h2 class="text-primary">संपर्क साधा</h2>
+    
+    <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+      <div class="mb-3">
+        <label for="name" class="form-label">नाव</label>
+        <input id="name" formControlName="name" class="form-control" placeholder="आपले नाव"/>
+        <div *ngIf="contactForm.get('name')?.invalid && contactForm.get('name')?.touched" class="text-danger">
+          कृपया आपले नाव भरा.
+        </div>
+      </div>
+      
+      <div class="mb-3">
+        <label for="email" class="form-label">ईमेल</label>
+        <input id="email" formControlName="email" type="email" class="form-control" placeholder="आपला ईमेल"/>
+        <div *ngIf="contactForm.get('email')?.invalid && contactForm.get('email')?.touched" class="text-danger">
+          कृपया वैध ईमेल भरा.
+        </div>
+      </div>
+  
+      <div class="mb-3">
+        <label for="message" class="form-label">संदेश</label>
+        <textarea id="message" formControlName="message" class="form-control" rows="4" placeholder="आपला संदेश"></textarea>
+        <div *ngIf="contactForm.get('message')?.invalid && contactForm.get('message')?.touched" class="text-danger">
+          कृपया आपला संदेश भरा.
+        </div>
+      </div>
+      
+      <button type="submit" class="btn btn-primary">संदेश पाठवा</button>
+    </form>
+  
+    <!-- Office Locations Section -->
+    <div class="office-locations mt-5">
+      <h3 class="text-primary">आमचे कार्यालय</h3>
+      <p>मुख्य कार्यालय:</p>
+      <p>पत्ता: बहिर्जी नगर, जहागिरी, बसमत, महाराष्ट्र ४३१५१२</p>
+     
+    </div>
+  </div>
+  

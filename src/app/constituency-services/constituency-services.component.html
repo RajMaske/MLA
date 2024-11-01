@@ -1,0 +1,16 @@
+<div class="constituency-services container py-5" id="service">
+  <!-- Section Heading -->
+  <h2 class="text-primary fw-bold mb-4 text-center">आमच्या सेवा</h2>
+
+  <!-- Services List -->
+  <div class="service-list row">
+      <div class="service-item col-md-6 col-lg-4 mb-4" *ngFor="let service of services">
+          <div class="card shadow-sm h-100">
+              <div class="card-body">
+                  <h5 class="service-title text-primary fw-bold mb-3">{{ service.title }}</h5>
+                  <p class="service-description text-muted">{{ service.description }}</p>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>

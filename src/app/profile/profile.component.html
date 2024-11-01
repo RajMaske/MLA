@@ -1,0 +1,17 @@
+<div class="profile container py-5" id="profile">
+    <!-- Section Heading -->
+    <h2 class="text-primary fw-bold mb-4 text-center">व्यक्तिगत माहिती</h2>
+    <p class="text-muted fs-5 text-center">{{ bio }}</p>
+
+    <!-- Achievements Section -->
+    <h3 class="text-primary fw-bold mt-5 mb-3 text-center">उपलब्ध्य यशस्वीता</h3>
+    <ul class="list-group list-group-flush shadow-sm rounded">
+        <li *ngFor="let achievement of achievements" class="list-group-item bg-light text-muted border-0">
+            <i class="bi bi-check-circle-fill text-primary me-2"></i>{{ achievement }}
+        </li>
+    </ul>
+
+    <!-- Journey Section -->
+    <h3 class="text-primary fw-bold mt-5 mb-3 text-center">आमदारांचा प्रवास</h3>
+    <p class="text-muted fs-5">{{ journey }}</p>
+</div>

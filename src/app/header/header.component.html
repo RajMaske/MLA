@@ -1,0 +1,36 @@
+<!-- Header Container -->
+<header class="header container-fluid bg-primary text-white py-2 d-flex justify-content-between align-items-center">
+    <!-- Logo/Title -->
+    <div class="header-title font-weight-bold">राजू भैय्या नवघरे</div>
+  
+    <!-- Desktop Navigation Links -->
+    <nav class="nav-links d-none d-md-flex">
+      <button class="btn btn-link text-white" (click)="scrollToSection('home')">मुख्यपृष्ठ</button>
+      <button class="btn btn-link text-white" (click)="scrollToSection('details')">तपशील</button>
+      <button class="btn btn-link text-white" (click)="scrollToSection('profile')">प्रोफाइल</button>
+      <button class="btn btn-link text-white" (click)="scrollToSection('news')">बातम्या</button>
+      <button class="btn btn-link text-white" (click)="scrollToSection('service')">सेवा</button>
+      <button class="btn btn-link text-white" (click)="scrollToSection('events')">कार्यक्रम</button>
+      <button class="btn btn-link text-white" (click)="scrollToSection('events')">गॅलरी</button>
+      <button class="btn btn-link text-white" (click)="scrollToSection('contact')">संपर्क</button>
+    </nav>
+  
+    <!-- Mobile Menu Button (Visible on Small Screens) -->
+    <div class="menu-icon d-md-none" (click)="toggleMenu()">
+      <i class="fas fa-bars"></i>
+    </div>
+  
+  
+</header>
+
+<!-- Mobile Dropdown Menu (Bootstrap Collapse) -->
+<div *ngIf="isMenuOpen" class="mobile-menu bg-primary text-white d-md-none">
+    <button class="btn btn-link text-white w-100" (click)="scrollToSection('home')">मुख्यपृष्ठ</button>
+    <button class="btn btn-link text-white w-100" (click)="scrollToSection('details')">तपशील</button>
+    <button class="btn btn-link text-white w-100" (click)="scrollToSection('profile')">प्रोफाइल</button>
+    <button class="btn btn-link text-white w-100" (click)="scrollToSection('news')">बातम्या</button>
+    <button class="btn btn-link text-white w-100" (click)="scrollToSection('service')">सेवा</button>
+    <button class="btn btn-link text-white w-100"  (click)="scrollToSection('events')">गॅलरी</button>
+    <button class="btn btn-link text-white w-100"  (click)="scrollToSection('contact')">संपर्क</button>
+  
+</div>

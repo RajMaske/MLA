@@ -1,0 +1,24 @@
+.header-title {
+    font-size: 1.5rem;
+  }
+  
+  .menu-icon {
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  .mobile-menu {
+    padding: 10px 0;
+  }
+  
+  .btn-link {
+    color: white;
+    text-align: left;
+  }
+  
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;
+    }
+  }
+  
